@@ -1,4 +1,27 @@
-/* styles: [
-    '.box {width:300px; height:200px; border: 1px solid LightGray; padding: 10px;}',
-    '.type {font-size: 30px;}'
-] */
+
+.buttonStates:hover,
+.buttonStates:focus {
+    background: #0053ba;
+}
+
+.buttonStates:focus {
+    outline: 1px solid tomato;
+    outline-offset: -4px;
+}
+
+.buttonStates:active {
+    transform: scale(0.99);
+}
+
+.box {
+    width:300px; 
+    height:200px; 
+    border: 1px solid blueviolet; 
+    padding: 10px;
+    background-color: green;
+}
+.type 
+{
+    font-size: 30px;
+}
+ 

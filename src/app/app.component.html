@@ -12,7 +12,15 @@
   <h2><div [hidden]="isHidden">Hidden element or not?</div></h2>
   <br/>Url: <a [href]="website.url" [textContent]="website.name"> </a>
   <br/>Url: <a bind-href="website.url" bind-textContent="website.name"> </a>
+  <img [src]="website.heroImageUrl">
+  <img bind-src="website.heroImageUrl">
+  <button [attr.aria-label]="help">help</button>     
+  <button [disabled]="isUnchanged">Cancel is disabled</button>
+  <div [ngClass]="classes">[ngClass] binding to the classes property</div>
+  <!-- <app-heroHC-detail [heroHC]="myHero"></app-heroHC-detail> -->
+  <app-hero-detail [hero]="myHero"></app-hero-detail>
   <h1>Mouse Events</h1>
+  
   <div class="box" (mouseenter)="mousecomponent.onEvent($event)"
                          (mouseleave)="mousecomponent.onEvent($event)"
                          (mousemove)="mousecomponent.coordinates($event)"

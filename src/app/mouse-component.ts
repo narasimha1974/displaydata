@@ -4,7 +4,7 @@ export class MouseComponent {
     clientY = 0;
 
     onEvent(event: MouseEvent): void {
-        this.event = event;
+        this.event = event; 
     }
 
     coordinates(event: MouseEvent): void {
